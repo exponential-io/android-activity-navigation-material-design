@@ -99,25 +99,6 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
             actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-        // Floating Action Button (FAB)
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        if (fab != null) {
-            fab.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Snackbar
-                        .make(v, "Placeholder", Snackbar.LENGTH_LONG)
-                        .setAction("Undo", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "Undo clicked", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .show();
-                }
-            });
-        }
     }
 
     @Override
