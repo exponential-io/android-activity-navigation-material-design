@@ -25,12 +25,11 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (findViewById(R.id.container) != null) {
-
-            if (savedInstanceState != null) {
-                // Restore the previously checked NavigationView drawer MenuItem.
-                checkedMenuItemId = savedInstanceState.getInt(CHECKED_MENU_ITEM_ID);
-            } else {
+        if (savedInstanceState != null) {
+            // Restore the previously checked NavigationView drawer MenuItem.
+            checkedMenuItemId = savedInstanceState.getInt(CHECKED_MENU_ITEM_ID);
+        } else {
+            if (findViewById(R.id.container) != null) {
                 // Guard against creating overlapping fragment instances if the activity is being
                 // restored from a previous state.
                 getSupportFragmentManager()
@@ -82,7 +81,6 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
             .load(R.drawable.avatar)
             .into(avatarImageView);
     }
-
 
     @Override
     protected void onStart() {
