@@ -11,11 +11,11 @@ Run the following commands to base the new repo on the exising `android-actionba
 ```bash
 cd ~/repos/android
 
-git clone git@github.com:exponential-io/android-actionbar-material-design.git android-navigationview-material-design
+git clone git@github.com:exponential-io/android-navigationview-material-design.git android-activity-navigation-material-design
 
-cd android-navigationview-material-design
+cd android-activity-navigation-material-design
 
-git remote set-url origin git@github.com:exponential-io/android-navigationview-material-design.git
+git remote set-url origin git@github.com:exponential-io/android-activity-navigation-material-design.git
 
 git push origin master
 
