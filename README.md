@@ -1,21 +1,22 @@
-# Android Activity Navigation via NavigationView
+# Android Navigation via NavigationView
 
-Learn how to use the Material Design Support Library's NavigationView to navigate between multiple top level activities.
+Learn how to use the Material Design Support Library's NavigationView to navigate between multiple fragments.
 
 ## Copy repo
 
 Create new **empty** repo on GitHub
 
-Run the following commands to base the new repo on the exising `android-actionbar-material-design` repo.
+Run the following commands to base the new repo on the existing `android-navigationview-material-design` repo.
 
 ```bash
 cd ~/repos/android
 
-git clone git@github.com:exponential-io/android-navigationview-material-design.git android-activity-navigation-material-design
+git clone git@github.com:exponential-io/android-navigationview-material-design.git android-navigation-material-design
 
-cd android-activity-navigation-material-design
+cd android-navigation-material-design
 
-git remote set-url origin git@github.com:exponential-io/android-activity-navigation-material-design.git
+# Change the git@github URL below to match your repo
+git remote set-url origin git@github.com:exponential-io/android-navigation-material-design.git
 
 git push origin master
 
@@ -48,5 +49,4 @@ git remote -v
 
 ## Follow commit log
 
-You can now start to follow the steps to implement Activity navigation via the NavigationDrawer through the git commit log. Begin with the commits that are prefixed with `nav:`.
-
+You can now start to follow the steps to implement navigation via the NavigationDrawer through the git commit log. Begin with the commits that are prefixed with `nav:`.
