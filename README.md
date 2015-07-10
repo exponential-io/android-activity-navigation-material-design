@@ -1,6 +1,6 @@
-# Android NavigationView via Material Design Support Library
+# Android Activity Navigation via NavigationView
 
-Learn how to use the Material Design Support Library's NavigationView to create a drawer.
+Learn how to use the Material Design Support Library's NavigationView to navigate between multiple top level activities.
 
 ## Copy repo
 
@@ -28,19 +28,19 @@ git remote -v
 - Open the new project in Android Studio.
 - Right-click on **app** in the Project pane, click **Open Module Settings**.
 - In the **Project Structure** dialog box, click the **Flavors** tab.
-    - Change the **Application Id** to `io.exponential.mdnavigationview`.
+    - Change the **Application Id** to `mdnavigation`.
     - Click **OK**.
 - Open `build.gradle`:
-    - Notice how `applicationId` has been changed to `io.exponential.mdnavigationview`.
+    - Notice how `applicationId` has been changed to `mdnavigation`.
 - Open the `AndroidManifest.xml`:
-    - Change the package to `io.exponential.mdnavigationview`.
-- Refactor the `io.exponential.materialdesignactionbar` package to `io.exponential.mdnavigationview`.
+    - Change the package to `mdnavigation`.
+- Refactor the `io.exponential.mdnavigationview` package to `io.exponential.mdnavigation`.
 - Open `MainActivity.java:
-    - Change the package to `package io.exponential.mdnavigationview;`.
+    - Change the package to `package io.exponential.mdnavigation;`.
 - Open `MainFragment.java:
-    - Change the package to `package io.exponential.mdnavigationview;`.
+    - Change the package to `package io.exponential.mdnavigation;`.
 - Open `strings.xml`:
-    - Change `app_name` to `Material Design NavigationView`.
+    - Change `app_name` to `Material Design Navigation`.
 - Select **Build**, click **Clean**.
 - Select **Build**, click **Rebuild Project**.
 - Commit your changes to git.
@@ -48,5 +48,5 @@ git remote -v
 
 ## Follow commit log
 
-You can now start to follow the steps to implement the NavigationDrawer via the git commit log. Begin with the commits that are prefixed with `drawer:`.
+You can now start to follow the steps to implement Activity navigation via the NavigationDrawer through the git commit log. Begin with the commits that are prefixed with `nav:`.
 

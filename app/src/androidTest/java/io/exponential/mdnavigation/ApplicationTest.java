@@ -1,4 +1,4 @@
-package io.exponential.mdnavigationview;
+package io.exponential.mdnavigation;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
